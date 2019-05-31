@@ -12,8 +12,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DOtNet_05</RootNamespace>
-    <AssemblyName>DOtNet 05</AssemblyName>
+    <RootNamespace>DotNet_05</RootNamespace>
+    <AssemblyName>DotNet 05</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -185,6 +185,10 @@
     <Compile Include="Migrations\201905300631482_OverrideConventionsGigsGenres.Designer.cs">
       <DependentUpon>201905300631482_OverrideConventionsGigsGenres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905310101105_PopulateGenreTable.cs" />
+    <Compile Include="Migrations\201905310101105_PopulateGenreTable.Designer.cs">
+      <DependentUpon>201905310101105_PopulateGenreTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -276,6 +280,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201905300631482_OverrideConventionsGigsGenres.resx">
       <DependentUpon>201905300631482_OverrideConventionsGigsGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905310101105_PopulateGenreTable.resx">
+      <DependentUpon>201905310101105_PopulateGenreTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
