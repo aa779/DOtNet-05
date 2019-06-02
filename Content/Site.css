@@ -22,3 +22,73 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* Set Boostrap override styles */
+.navbar-inverse {
+    background-color: #ff4342;
+    border-color: #ff4342;
+}
+
+.navbar-brand {
+    font-family: Dosis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30pt;
+}
+
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav:hover,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: rgba(200, 40, 40, .5);
+}
+
+.dropdown-menu {
+    box-shadow: none;
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.1;
+    color: inherit;
+}
+
+p {
+    font-family: Dosis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14pt;
+    line-height: 1.5em;
+}
+
+footer p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+
+.form-control {
+    font-family: Dosis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    border-color: #2196f3;
+    box-shadow: none;
+    border-width: 2px;
+}
+
+.btn {
+    font-family: Dosis, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    padding: 8px 30px;
+    font-size: 20px;
+}
+label {
+    font-weight: normal;
+}
