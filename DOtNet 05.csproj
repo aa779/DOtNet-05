@@ -174,28 +174,29 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905300549145_InitialModel.cs" />
-    <Compile Include="Migrations\201905300549145_InitialModel.Designer.cs">
-      <DependentUpon>201905300549145_InitialModel.cs</DependentUpon>
+    <Compile Include="Migrations\201906020557451_Correcting.cs" />
+    <Compile Include="Migrations\201906020557451_Correcting.Designer.cs">
+      <DependentUpon>201906020557451_Correcting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905300551371_CreateGigTable.cs" />
-    <Compile Include="Migrations\201905300551371_CreateGigTable.Designer.cs">
-      <DependentUpon>201905300551371_CreateGigTable.cs</DependentUpon>
+    <Compile Include="Migrations\201906020601029_Correcting2.cs" />
+    <Compile Include="Migrations\201906020601029_Correcting2.Designer.cs">
+      <DependentUpon>201906020601029_Correcting2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905300631482_OverrideConventionsGigsGenres.cs" />
-    <Compile Include="Migrations\201905300631482_OverrideConventionsGigsGenres.Designer.cs">
-      <DependentUpon>201905300631482_OverrideConventionsGigsGenres.cs</DependentUpon>
+    <Compile Include="Migrations\201906020604566_Correcting3.cs" />
+    <Compile Include="Migrations\201906020604566_Correcting3.Designer.cs">
+      <DependentUpon>201906020604566_Correcting3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905310101105_PopulateGenreTable.cs" />
-    <Compile Include="Migrations\201905310101105_PopulateGenreTable.Designer.cs">
-      <DependentUpon>201905310101105_PopulateGenreTable.cs</DependentUpon>
+    <Compile Include="Migrations\201906020619391_Correcting4.cs" />
+    <Compile Include="Migrations\201906020619391_Correcting4.Designer.cs">
+      <DependentUpon>201906020619391_Correcting4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201905310511361_AddForeignKeyPropertiesToGig.cs" />
-    <Compile Include="Migrations\201905310511361_AddForeignKeyPropertiesToGig.Designer.cs">
-      <DependentUpon>201905310511361_AddForeignKeyPropertiesToGig.cs</DependentUpon>
+    <Compile Include="Migrations\201906020625343_Correcting5.cs" />
+    <Compile Include="Migrations\201906020625343_Correcting5.Designer.cs">
+      <DependentUpon>201906020625343_Correcting5.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Gig.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -281,20 +282,20 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201905300549145_InitialModel.resx">
-      <DependentUpon>201905300549145_InitialModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906020557451_Correcting.resx">
+      <DependentUpon>201906020557451_Correcting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905300551371_CreateGigTable.resx">
-      <DependentUpon>201905300551371_CreateGigTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906020601029_Correcting2.resx">
+      <DependentUpon>201906020601029_Correcting2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905300631482_OverrideConventionsGigsGenres.resx">
-      <DependentUpon>201905300631482_OverrideConventionsGigsGenres.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906020604566_Correcting3.resx">
+      <DependentUpon>201906020604566_Correcting3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905310101105_PopulateGenreTable.resx">
-      <DependentUpon>201905310101105_PopulateGenreTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906020619391_Correcting4.resx">
+      <DependentUpon>201906020619391_Correcting4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201905310511361_AddForeignKeyPropertiesToGig.resx">
-      <DependentUpon>201905310511361_AddForeignKeyPropertiesToGig.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201906020625343_Correcting5.resx">
+      <DependentUpon>201906020625343_Correcting5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

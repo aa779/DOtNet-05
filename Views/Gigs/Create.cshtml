@@ -7,28 +7,29 @@
 <h2>Add A Gig</h2>
 @using (Html.BeginForm("Create", "Gigs"))
 {
+    <p class="alert alert-info" style="font-weight:normal">All fields are <strong>required</strong></p>
     @Html.AntiForgeryToken()
     <div class="form-group">
-        @Html.LabelFor(m => m.Venue)
-        @Html.TextBoxFor(m => m.Venue, new { @class = "form-control" })
+        @Html.LabelFor(m => m.Venue, new { @class = "col-md-2 control-label", align = "right" })
+        @Html.TextBoxFor(m => m.Venue, new { @class = "form-control", autofocus = "autofocus" })
         @Html.ValidationMessageFor(m => m.Venue)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Date)
-        @Html.TextBoxFor(m => m.Date, new { @class = "form-control" })
+        @Html.LabelFor(m => m.Date, new { @class = "col-md-2 control-label", align = "right" })
+        @Html.TextBoxFor(m => m.Date, new { @class = "form-control", placeholder = "ex: 1 Jan 2019" })
         @Html.ValidationMessageFor(m => m.Date)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Time)
-        @Html.TextBoxFor(m => m.Time, new { @class = "form-control" })
+        @Html.LabelFor(m => m.Time, new { @class = "col-md-2 control-label", align = "right" })
+        @Html.TextBoxFor(m => m.Time, new { @class = "form-control", placeholder = "ex: 23:45" })
         @Html.ValidationMessageFor(m => m.Time)
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.Genre)
+        @Html.LabelFor(m => m.Genre, new { @class = "col-md-2 control-label", align = "right" })
         @Html.DropDownListFor(m => m.Genre, new SelectList(Model.Genres, "Id", "Name"), "", new { @class = "form-control" })
         @Html.ValidationMessageFor(m => m.Genre)
     </div>
-    <button class="btn btn-primary">Submit</button>
+    <button class="btn btn-primary" style="margin-left:155px">Submit</button>
 
 }
 @section scripts
