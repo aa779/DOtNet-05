@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 20px;
 }
 
@@ -24,6 +24,12 @@ textarea {
 }
 
 /* Set Boostrap override styles */
+span.field-validation-error {
+    color: red;
+    font-weight: bold;
+    padding-top: -10px;
+}
+
 .navbar-inverse {
     background-color: #ff4342;
     border-color: #ff4342;
@@ -89,6 +95,55 @@ footer p {
     padding: 8px 30px;
     font-size: 20px;
 }
+
 label {
     font-weight: normal;
 }
+
+/* Page-level styles*/
+.gigs {
+    list-style: none;
+ }
+
+.gigs > li {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.gigs > li .date {
+    background: red;
+    color: white;
+    text-align: center;
+    width: 60px;
+    border-radius: 8px;
+}
+
+.gigs > li .date .month {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+.gigs > li .date .day {
+    background: #f7f7f7;
+    color: #333;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+.gigs > li .details {
+    position: absolute;
+    top: 0;
+    left: 70px;
+}
+
+.gigs > li .details .artist {
+    font-weight: bold;
+    display: block;
+}
+
+.gigs > li .details .genre {
+    font-size: 16px;
+}
+

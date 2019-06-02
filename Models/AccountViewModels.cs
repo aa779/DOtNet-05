@@ -65,6 +65,11 @@ namespace DOtNet_05.Models
     public class RegisterViewModel
     {
         [Required]
+        [StringLength(100)]
+        [Display(Name = "Nome")]
+        public string UserNameEmail { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
