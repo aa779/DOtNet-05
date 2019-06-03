@@ -6,7 +6,7 @@ namespace DotNet_05.Migrations
     {
         public override void Up()
         {
-            RenameColumn(table: "dbo.AspNetUsers", name: "Name", newName: "ArtistName");
+            RenameColumn(table: "dbo.AspNetUsers", name: "ArtistName", newName: "Name");
         }
 
         public override void Down()

@@ -1,4 +1,4 @@
-namespace DOtNet_05.Migrations
+namespace DotNet_05.Migrations
 {
     using System;
     using System.Data.Entity;
