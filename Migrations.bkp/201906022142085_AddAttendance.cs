@@ -1,8 +1,9 @@
 namespace DotNet_05.Migrations
 {
+    using System;
     using System.Data.Entity.Migrations;
-
-    public partial class Correcting3 : DbMigration
+    
+    public partial class AddAttendance : DbMigration
     {
         public override void Up()
         {

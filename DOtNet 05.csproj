@@ -49,12 +49,21 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -167,39 +176,71 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="DTOs\AttendanceDto.cs" />
+    <Compile Include="Controllers\AttendancesController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201906020557451_Correcting.cs" />
-    <Compile Include="Migrations\201906020557451_Correcting.Designer.cs">
+    <Compile Include="Migrations.bkp\201906020557451_Correcting.cs" />
+    <Compile Include="Migrations.bkp\201906020557451_Correcting.Designer.cs">
       <DependentUpon>201906020557451_Correcting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201906020601029_Correcting2.cs" />
-    <Compile Include="Migrations\201906020601029_Correcting2.Designer.cs">
+    <Compile Include="Migrations.bkp\201906020601029_Correcting2.cs" />
+    <Compile Include="Migrations.bkp\201906020601029_Correcting2.Designer.cs">
       <DependentUpon>201906020601029_Correcting2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905300549145_InitialModel.cs" />
+    <Compile Include="Migrations\201905300549145_InitialModel.Designer.cs">
+      <DependentUpon>201905300549145_InitialModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201906020604566_Correcting3.cs" />
     <Compile Include="Migrations\201906020604566_Correcting3.Designer.cs">
       <DependentUpon>201906020604566_Correcting3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201906020619391_Correcting4.cs" />
-    <Compile Include="Migrations\201906020619391_Correcting4.Designer.cs">
+    <Compile Include="Migrations.bkp\201906020619391_Correcting4.cs" />
+    <Compile Include="Migrations.bkp\201906020619391_Correcting4.Designer.cs">
       <DependentUpon>201906020619391_Correcting4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201906020625343_Correcting5.cs" />
-    <Compile Include="Migrations\201906020625343_Correcting5.Designer.cs">
+    <Compile Include="Migrations.bkp\201906020625343_Correcting5.cs" />
+    <Compile Include="Migrations.bkp\201906020625343_Correcting5.Designer.cs">
       <DependentUpon>201906020625343_Correcting5.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations.bkp\201906022142085_AddAttendance.cs" />
+    <Compile Include="Migrations.bkp\201906022142085_AddAttendance.Designer.cs">
+      <DependentUpon>201906022142085_AddAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations.bkp\Configuration.cs" />
+    <Compile Include="Migrations.bkp\201906022204304_AddAttendance2.cs" />
+    <Compile Include="Migrations.bkp\201906022204304_AddAttendance2.Designer.cs">
+      <DependentUpon>201906022204304_AddAttendance2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906022233360_AddAttendance4.cs" />
+    <Compile Include="Migrations\201906022233360_AddAttendance4.Designer.cs">
+      <DependentUpon>201906022233360_AddAttendance4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906022305288_AddAttendance5.cs" />
+    <Compile Include="Migrations\201906022305288_AddAttendance5.Designer.cs">
+      <DependentUpon>201906022305288_AddAttendance5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906022336484_AssAttendance6.cs" />
+    <Compile Include="Migrations\201906022336484_AssAttendance6.Designer.cs">
+      <DependentUpon>201906022336484_AssAttendance6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906030015166_AssAttendance7.cs" />
+    <Compile Include="Migrations\201906030015166_AssAttendance7.Designer.cs">
+      <DependentUpon>201906030015166_AssAttendance7.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Attendance2.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Gig.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -282,20 +323,41 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201906020557451_Correcting.resx">
+    <EmbeddedResource Include="Migrations.bkp\201906020557451_Correcting.resx">
       <DependentUpon>201906020557451_Correcting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906020601029_Correcting2.resx">
+    <EmbeddedResource Include="Migrations.bkp\201906020601029_Correcting2.resx">
       <DependentUpon>201906020601029_Correcting2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905300549145_InitialModel.resx">
+      <DependentUpon>201905300549145_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906020604566_Correcting3.resx">
       <DependentUpon>201906020604566_Correcting3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906020619391_Correcting4.resx">
+    <EmbeddedResource Include="Migrations.bkp\201906020619391_Correcting4.resx">
       <DependentUpon>201906020619391_Correcting4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201906020625343_Correcting5.resx">
+    <EmbeddedResource Include="Migrations.bkp\201906020625343_Correcting5.resx">
       <DependentUpon>201906020625343_Correcting5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations.bkp\201906022142085_AddAttendance.resx">
+      <DependentUpon>201906022142085_AddAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations.bkp\201906022204304_AddAttendance2.resx">
+      <DependentUpon>201906022204304_AddAttendance2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906022233360_AddAttendance4.resx">
+      <DependentUpon>201906022233360_AddAttendance4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906022305288_AddAttendance5.resx">
+      <DependentUpon>201906022305288_AddAttendance5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906022336484_AssAttendance6.resx">
+      <DependentUpon>201906022336484_AssAttendance6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906030015166_AssAttendance7.resx">
+      <DependentUpon>201906030015166_AssAttendance7.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
