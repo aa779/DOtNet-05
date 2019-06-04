@@ -6,23 +6,61 @@
 <ul class="gigs">
     @foreach (var gig in Model)
     {
-        <li>
-            <div class="date">
-                <div class="month">
-                    @gig.DateTime.ToString("MMM")
-                </div>
-                <div class="day">
-                    @gig.DateTime.ToString("d ")
-                </div>
+    <li>
+        <div class="date">
+            <div class="month">
+                @gig.DateTime.ToString("MMM")
             </div>
-            <div class="details">
-                <span class="artist">
-                    @gig.Artist.Email
-                </span>
-                <span class="genre">
-                    @gig.Genre.Name
-                </span>
+            <div class="day">
+                @gig.DateTime.ToString("d ")
             </div>
-        </li>
+        </div>
+        <div class="details">
+            <span class="artist">
+                @gig.Artist.Email
+            </span>
+            <span class="genre">
+                @gig.Genre.Name
+            </span>
+            <span class="going">
+                <button data-gig-id="@gig.Id" value="0" class="btn btn-default btn-sm js-toggle-attendance">Going?</button>
+            </span>
+        </div>
+    </li>
     }
 </ul>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            $(".js-toggle-attendance").click(function (e) {
+                var button = $(e.target);
+                var element = $(e.target).attr("value");
+                if (element == 0) {
+                    element.replace(element, '1');
+                    button.removeClass("btn-default")
+                        .addClass("btn-info")
+                        .text("Gone");
+                }
+                else {
+                    element = 0;
+                    button.removeClass("btn-info")
+                        .addClass("btn-default")
+                        .text("Going?");
+                }
+                alert("Please provide a valid token to access API!");
+                
+//                $.post("/api/attendances", { gigId: button.attr("data-gig-id") })
+//                    .done(function () { 
+//                        button.removeClass("btn-default")
+//                        .addClass("btn-info")
+//                        .text("Gone");
+//                    })
+//                    .fail(function () {
+//                        alert("Something was wrong!");
+//                    });
+            });
+        });
+    </script>
+}

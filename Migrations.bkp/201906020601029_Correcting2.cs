@@ -2,7 +2,7 @@ namespace DotNet_05.Migrations
 {
     using System.Data.Entity.Migrations;
 
-    public partial class Correcting3 : DbMigration
+    public partial class Correcting2 : DbMigration
     {
         public override void Up()
         {
