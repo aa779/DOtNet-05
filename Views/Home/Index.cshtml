@@ -37,14 +37,14 @@
             $(".js-toggle-attendance").click(function (e) {
                 var button = $(e.target);
                 var element = $(e.target).attr("value");
-                if (element == 0) {
-                    element.replace(element, '1');
+                if (element == '0') {
+                    element = '1';
                     button.removeClass("btn-default")
                         .addClass("btn-info")
                         .text("Gone");
                 }
                 else {
-                    element = 0;
+                    element = '0';
                     button.removeClass("btn-info")
                         .addClass("btn-default")
                         .text("Going?");

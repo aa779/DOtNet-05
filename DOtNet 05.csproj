@@ -178,11 +178,13 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FollowingsController.cs" />
     <Compile Include="DTOs\AttendanceDto.cs" />
     <Compile Include="Controllers\AttendancesController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DTOs\FollowingDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -235,9 +237,14 @@
     <Compile Include="Migrations\201906030015166_AssAttendance7.Designer.cs">
       <DependentUpon>201906030015166_AssAttendance7.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201906040516017_AddFollowingAndFollowers.cs" />
+    <Compile Include="Migrations\201906040516017_AddFollowingAndFollowers.Designer.cs">
+      <DependentUpon>201906040516017_AddFollowingAndFollowers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Attendance2.cs" />
+    <Compile Include="Models\Following.cs" />
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Gig.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -358,6 +365,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906030015166_AssAttendance7.resx">
       <DependentUpon>201906030015166_AssAttendance7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906040516017_AddFollowingAndFollowers.resx">
+      <DependentUpon>201906040516017_AddFollowingAndFollowers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
