@@ -70,21 +70,6 @@ p {
     line-height: 1.5em;
 }
 
-footer {
-    width: 100%;
-    background-color: rgba(128, 128, 128, .3);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    padding-top: 5px;
-}
-
-footer p {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 10px;
-}
-
 .form-control {
     font-family: Dosis, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-bottom: 25px;
@@ -108,12 +93,34 @@ footer p {
 
 .btn-sm {
     font-size: 12pt;
-    font-weight: 600;
-    padding: 10px 20px;
+    font-weight: 500;
+    padding: 4px 10px;
+}
+
+.follow {
+    position: relative;
+    top: 12px;
+    left: 180px;
+    display: inline-block;
 }
 
 label {
     font-weight: normal;
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(128, 128, 128, .3);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 5px;
+}
+
+footer p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
 }
 
 /* Page-level styles*/
@@ -159,7 +166,7 @@ label {
 
 .gigs > li .details {
     position: absolute;
-    top: 0;
+    top: -12px;
     left: 70px;
     margin: 10px;
 }
